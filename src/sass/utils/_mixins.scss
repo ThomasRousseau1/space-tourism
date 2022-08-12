@@ -1,0 +1,49 @@
+//FONTS
+
+//HEADINGS
+@mixin heading1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+}
+
+@mixin heading2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+}
+
+@mixin heading3 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    font-weight: 100;
+}
+
+@mixin heading4 {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+
+@mixin heading5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+
+//SUBHEADINGS
+@mixin subHeading1 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+
+@mixin subHeading2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+
+//NAV 
+@mixin navText {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+

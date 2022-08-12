@@ -1,0 +1,80 @@
+//HOME
+body {
+    background-image: url(../../../public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    &__description {
+        padding-left: 10rem;
+        margin-top: 5rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        @include heading5;
+        font-weight: 100;
+    }
+    & span {
+        @include heading1;
+        font-weight: 100;
+    }
+    &__text {
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    &__button {
+        width: 20rem;
+        height: 20rem;
+        padding: 5rem;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin-right: 10rem;
+        margin-top: 10rem;
+        border-style: none;
+        cursor: pointer;
+        &:hover {
+            border-style: 5rem solid black;
+        }
+    }
+}
+
+//DESTINATION
+.destination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10rem 0 10rem;
+    &__containerLeft {
+        margin-top: 5rem;
+        width: 50%;
+        .destination__title {
+            @include heading5;
+            font-weight: 100;
+            & span {
+                margin-right: 1rem;
+                color: gray;
+            }
+        }
+        .destination__image {
+            margin-top: 5rem;
+            padding-left: 5rem;
+        }
+    }
+    &__containerRight {
+        margin-top: 15rem;
+        width: 30rem;
+        .destination__title2 {
+            @include heading2;
+            text-transform: uppercase;
+        }
+    }
+}
