@@ -20,16 +20,17 @@ function Destination() {
                 <div className='destination__containerRight'>
                 <div className='destination__description'>
                     {planets.map((item, index) => (
-                        <button key={index} onClick={() => setValue(index)}>
+                        <button key={index} onClick={() => setValue(index)} className={`destination__button ${index === value && 'active'}`}>
                             {item.name}
                         </button>
                     ))}
                     <h2 className='destination__title2'>{name}</h2>
                     <p className='destination__text'>{description}</p>
                 </div>
-                <div>
-                    <p>AVG. DISTANCE {distance}</p>
-                    <p> EST. TRAVEL TIME {travel}</p>
+                <hr/>
+                <div className='destination__distance'>
+                    <p>AVG. DISTANCE<br/><span>{distance}</span></p>
+                    <p> EST. TRAVEL TIME<br/><span>{travel}</span></p>
                 </div>
                 </div>
         </section>

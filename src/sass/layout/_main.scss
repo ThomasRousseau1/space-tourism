@@ -1,16 +1,15 @@
 //HOME
-body {
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15rem;
+    margin-bottom: 5rem;
+    height: 50rem;
+    //for background img
     background-image: url(../../../public/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.home {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10rem;
-    margin-bottom: 5rem;
     &__description {
         padding-left: 10rem;
         margin-top: 5rem;
@@ -52,7 +51,28 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10rem 0 10rem;
+    padding: 10rem 20rem 0 20rem;
+    background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    &__button {
+        border-style: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-right: 1.3rem;
+        padding: 0 0 1rem 0;
+        color: $colourSecondary;
+        @include navText;
+        &:hover {
+            border-bottom: 2px solid rgba(225,225,225, 0.6);
+        }
+    }
+    // .active {
+    //     border-bottom: 3px solid #fff;
+    // }
     &__containerLeft {
         margin-top: 5rem;
         width: 50%;
@@ -61,6 +81,7 @@ body {
             font-weight: 100;
             & span {
                 margin-right: 1rem;
+                font-weight: bold;
                 color: gray;
             }
         }
@@ -71,10 +92,40 @@ body {
     }
     &__containerRight {
         margin-top: 15rem;
-        width: 30rem;
+        width: 25rem;
+
         .destination__title2 {
             @include heading2;
             text-transform: uppercase;
+            margin: 1.5rem 0 1.5rem 0;
+        }
+        .destination__text {
+            color: $colourSecondary;
+            line-height: 2rem;
         }
     }
+    & hr {
+        height: 1px;
+        background-color: gray;
+        border: none;
+        margin-top: 3rem;
+
+    }
+    &__distance {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: uppercase;
+        @include subHeading2;
+        & span {
+            @include subHeading1;
+        }
+        &:last-child {
+            margin-right: 3rem;
+        }
+    }
+}
+//pour border sélection planète
+.active {
+    border-bottom: 2px solid #fff;
 }
