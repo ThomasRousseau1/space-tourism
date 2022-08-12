@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10rem 20rem 0 20rem;
+    padding: 10rem 15rem 0 15rem;
     background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,4 +128,66 @@
 //pour border sélection planète
 .active {
     border-bottom: 2px solid #fff;
+}
+
+//CREW 
+.crew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15rem 15rem 0 15rem;
+    //background img 
+    background-image: url(../../../public/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__title {
+        @include heading5;
+        font-weight: 100;
+        margin-bottom: 12rem;
+        & span {
+            margin-right: 1rem;
+            font-weight: bold;
+            color: gray;
+        }
+    }
+    &__role {
+        @include heading4;
+        text-transform: uppercase;
+        color: gray;
+        margin-bottom: 1rem
+    }
+    &__name {
+        @include heading3;
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-top: 0;
+    }
+    &__bio {
+        line-height: 2rem;
+        margin-bottom: 8rem;
+        color: $colourSecondary;
+        width: 60%;
+    }
+    &__button {
+        padding: 0.5rem;
+        border-radius: 50%;
+        border: none;
+        background-color: gray;
+        margin-right: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            background-color: darkgray;
+        }
+    }
+    &__image {
+        margin-top: 5rem;
+    }
+}
+.crew__container {
+    width: 45%;
+}
+//Pour bouton en fonction de l'index sur lequel on se trouve
+.active-crew {
+    background-color: #fff;
 }
