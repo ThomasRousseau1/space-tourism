@@ -11,20 +11,25 @@ function Technology() {
 
     return (
         <>
-        <h1><span>03 </span>SPACE LAUNCH 101</h1>
-        <section>
+        <section className='technology'>
             <div>
-                <div>
-                    <h2>{name}</h2>
-                    <p>{description}</p>
+            <h1 className='technology__title'><span>03 </span>SPACE LAUNCH 101</h1>
+            <div className='technology__container'>
+                <div className='technology__description'>
+                    <h2 className='technology__subname'>The terminology...</h2>
+                    <h3 className='technology__name'>{name}</h3>
+                    <p className='technology__text'>{description}</p>
                 </div>
-                <img src={images.png} alt={name} title={name}/>
-            </div>
-            {vehicule.map((item, index) => (
-                        <button key={index} onClick={() => setValue(index)}>
-                            {item.name}
+                <div className='technology__selectors'>
+                {vehicule.map((item, index) => (
+                        <button key={index} onClick={() => setValue(index)} className={`technology__button ${index === value && 'active-destination'}`}>
+                            {index + 1}
                         </button>
                     ))}
+                </div>
+            </div>
+            </div>
+                <img src={images.portrait} alt={name} title={name} className='technology__image'/>
         </section>
         </>
     )
