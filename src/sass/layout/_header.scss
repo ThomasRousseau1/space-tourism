@@ -31,8 +31,12 @@
         text-transform: uppercase;
         @include navText;
         &:hover {
-            border-bottom: 3px solid #fff;
-            padding-bottom: 37px;
+            border-bottom: 2px solid gray;
+            padding-bottom: 40px;
         }
     }
+}
+
+.active-nav {
+    color: blue;
 }
