@@ -33,15 +33,16 @@
     &__button {
         width: 20rem;
         height: 20rem;
-        padding: 5rem;
+        // padding: 5rem;
         border-radius: 50%;
         font-size: 2rem;
         margin-right: 10rem;
         margin-top: 10rem;
         border-style: none;
         cursor: pointer;
+        transition: 300ms;
         &:hover {
-            border-style: 5rem solid black;
+            outline: 5rem solid rgba(255,255,255,0.1);
         }
     }
 }
@@ -247,6 +248,7 @@
         border-radius: 50%;
         border: 1px solid gray;
         background-color: $colourPrimary;
+        color: #fff;
         font-size: 2rem;
         cursor: pointer;
         &:hover {
