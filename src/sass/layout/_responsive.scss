@@ -1,0 +1,66 @@
+//HOME
+@media screen and (max-width: 1400px) {
+    .home {
+        &__description {
+            padding-left: 3rem;
+        }
+        &__button {
+            margin-right: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .header__link {
+        margin: 0;
+    }
+    .home {
+        &__description {
+            padding-left: 2rem;
+        }
+        &__button {
+            width: 12rem;
+            height: 12rem;
+            margin-right: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        left: 0;
+        margin-top: 1rem;
+        &__links {
+            background:rgba(0, 0, 0, 0.5);
+            justify-content: space-evenly;
+            width: 60%;
+        }
+        &__link {
+            margin: 0;
+            padding: 40px 0 40px 0;
+        }
+        &__logo {
+            padding-left: 2rem;
+        }
+        & span {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url(../../../public/assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        margin-bottom: 0;
+        &__description {
+            padding: 0;
+            margin-top: 0;
+        }
+        &__button {
+            margin: 0;
+        }
+    }
+}
