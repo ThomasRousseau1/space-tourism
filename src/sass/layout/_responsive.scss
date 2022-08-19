@@ -8,6 +8,14 @@
             margin-right: 3rem;
         }
     }
+    .destination {
+        padding: 10rem 5rem 0 5rem;
+    }
+    .destination__containerLeft {
+        .destination__image {
+            padding-left: 2rem;
+        }
+    }
 }
 @media screen and (max-width: 1100px) {
     .header__link {
@@ -21,6 +29,40 @@
             width: 12rem;
             height: 12rem;
             margin-right: 2rem;
+        }
+    }
+    .destination {
+        flex-direction: column;
+        background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        padding: 5rem 0 0 0;
+        &__containerLeft {
+            width: 100%;
+            text-align: center;
+            .destination__image {
+                padding: 0;
+            }
+            .destination__title {
+                text-align: left;
+                margin-left: 2rem;
+            }
+        }
+        &__containerRight {
+            align-self: center;
+            margin-top: 5rem;
+            text-align: center;
+            .destination__text {
+                padding: 0 5rem 0 5rem;
+            }
+            hr {
+                margin: 4rem 4rem 1rem 4rem;
+            }
+            .destination__distance {
+                padding: 0 7rem 0 7rem;
+            }
         }
     }
 }
@@ -63,6 +105,24 @@
             margin: 0;
         }
     }
+    .destination {
+        padding: 5rem 0 0 0;
+        &__containerLeft {
+            .destination__image {
+                width: 60%;
+            }
+            .destination__title {
+                font-size: 1.3rem;
+            }
+        }
+        &__containerRight {
+            .destination__distance {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -84,5 +144,21 @@
     .home__button {
         font-size: 1.5rem;
         margin: 1rem;
+    }
+    .destination {
+        &__containerLeft {
+            align-items: center;
+            .destination__title {
+                text-align: center;
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+        &__containerRight {
+            width: 90%;
+            .destination__title2 {
+                font-size: 5rem;
+            }
+        }
     }
 }
