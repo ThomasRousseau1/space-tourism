@@ -67,6 +67,7 @@
 
 @media screen and (max-width: 500px) {
     .home {
+        padding-top: 10rem;
         & h1 {
             font-size: 1rem;
             & span {
@@ -79,8 +80,9 @@
         &__text {
             font-size: 1rem;
         }
-        & button {
-            font-size: 1.5rem;
-        }
+    }
+    .home__button {
+        font-size: 1.5rem;
+        margin: 1rem;
     }
 }
