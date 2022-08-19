@@ -23,7 +23,7 @@
         }
     }
     &__link {
-        color: fff;
+        color: #fff;
         padding: 40px 16px 40px 16px;
         margin: 0 1rem 0 1rem;
         text-decoration: none;
@@ -39,3 +39,70 @@
 .active-nav {
     color: blue;
 }
+
+//BURGER MENU
+.burger {
+    position: relative;
+    right: 3rem;
+    bottom: 1.2rem;
+    & button {
+        position: absolute;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        backdrop-filter: blur(50px);
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        max-width: 290px;
+        z-index: 9;
+    }
+    &__link {
+        @include navText;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 1rem 0 1rem 0;
+        padding: 2rem 0 0 2rem
+    }
+    &__link:first-child {
+        margin-top: 5rem;
+    }
+    & p {
+        margin-right: 0.8rem;
+        font-weight: bold;
+    }
+    &__show {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .header__links {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+
