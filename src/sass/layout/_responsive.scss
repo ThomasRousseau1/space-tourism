@@ -54,13 +54,33 @@
         background-size: cover;
         background-position: center;
         min-height: 100%;
-        margin-bottom: 0;
+        padding-bottom: 5rem;
         &__description {
             padding: 0;
             margin-top: 0;
         }
         &__button {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        & h1 {
+            font-size: 1rem;
+            & span {
+                font-size: 5rem;
+            }
+        }
+        &__description {
+            height: 20rem;
+        }
+        &__text {
+            font-size: 1rem;
+        }
+        & button {
+            font-size: 1.5rem;
         }
     }
 }
