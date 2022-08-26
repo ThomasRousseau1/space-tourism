@@ -216,12 +216,13 @@
         background-position: center;
         min-height: 100%;
         flex-direction: column-reverse;
-        padding: 0 0 5rem 0;
+        padding: 3rem 0 5rem 0;
         height: 55rem;
         &__img {
             width: 100%;
             height: 35rem;
             margin-bottom: 5rem;
+            margin-top: 15rem;
             .technology__image {
                 height: 15rem;
             }
@@ -311,6 +312,7 @@
     .technology {
         align-items: center;
         width: 100%;
+        padding: 2rem 0 5rem 0;
         &__container {
             .technology__description {
                 width: 80%;
@@ -331,7 +333,7 @@
         }
         .technology__img {
             .technology__image {
-                margin-top: 12rem;
+                margin-top: 4rem;
                 max-height: 20rem;
             }
         }
