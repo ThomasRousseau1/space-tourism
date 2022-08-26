@@ -19,6 +19,9 @@
     .crew {
         padding: 10rem 5rem 0 5rem;
     }
+    .technology {
+        padding: 10rem 0 5rem 5rem;
+    }
 }
 @media screen and (max-width: 1100px) {
     .header__link {
@@ -69,7 +72,47 @@
         }
     }
     .crew {
-        padding: 5rem 0 0 0;;
+        padding: 10rem 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &__title {
+            text-align: left;
+            margin-left: 2rem;
+            margin-bottom: 5rem;
+        }
+        &__container {
+            width: 100%;
+            text-align: center;
+            .crew__bio {
+                padding: 0 15vw 0 15vw;
+            }
+        }
+    }
+    .technology {
+        &__container {
+            flex-direction: column-reverse;
+            .technology__description {
+                .technology__subname {
+                    font-size: 1rem;
+                }
+                .technology__name {
+                    font-size: 2.5rem;
+                }
+                .technology__text {
+                    width: 25rem;
+                    margin-right: 0;
+                }
+            }
+        }
+        &__selectors {
+            flex-direction: row;
+            padding: 2rem 0 2rem 0;
+            margin-right: 0;
+        }
+        &__button {
+            margin: 0.5rem;
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -137,6 +180,66 @@
             }
         }
     }
+    .crew {
+        padding: 8rem 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url(../../../public/assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        &__title {
+            font-size: 1.3rem;
+        }
+        &__role {
+            font-size: 1.5rem;
+        }
+        &__name {
+            font-size: 2.5rem;
+        }
+        &__bio {
+            margin-bottom: 2rem;
+        }
+        &__button {
+            padding: 0.3rem;
+        }
+        &__image img {
+            width: 70%;
+        }
+    }
+    .technology {
+        background-image: url(../../../public/assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        flex-direction: column-reverse;
+        padding: 0 0 5rem 0;
+        height: 55rem;
+        &__img {
+            width: 100%;
+            height: 35rem;
+            margin-bottom: 5rem;
+            .technology__image {
+                height: 15rem;
+            }
+        }
+        &__title {
+            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            margin: 10rem 0 0 2rem ;
+            font-size: 1.3rem;
+        }
+        &__container {
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            margin-top: 15rem;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -172,6 +275,64 @@
             width: 90%;
             .destination__title2 {
                 font-size: 5rem;
+            }
+        }
+    }
+    .crew {
+        flex-direction: column-reverse;
+        &__container {
+            .crew__title {
+                text-align: center;
+                margin-left: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                margin-top: 8rem;
+                font-size: 1rem;
+            }
+        }
+        &__image {
+            width: 70%;
+            & img {
+                border-bottom: 1px solid gray;
+            }
+        }
+        &__role {
+            padding-top: 4rem;
+        }
+        &__container {
+            padding-bottom: 10rem;
+            .crew__name {
+                font-size: 2rem;
+            }
+        }
+    }
+    .technology {
+        align-items: center;
+        width: 100%;
+        &__container {
+            .technology__description {
+                width: 80%;
+                .technology__name {
+                    font-size: 2rem;
+                }
+                .technology__text {
+                    width: 100%;
+                }
+            }
+        }
+        &__title {
+            margin-left: 0;
+            margin-top: 7rem;
+            text-align: center;
+            right: 0;
+            left: 0;
+        }
+        .technology__img {
+            .technology__image {
+                margin-top: 12rem;
+                max-height: 20rem;
             }
         }
     }
