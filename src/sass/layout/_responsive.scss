@@ -60,14 +60,16 @@
             align-self: center;
             margin-top: 5rem;
             text-align: center;
-            .destination__text {
-                padding: 0 5rem 0 5rem;
-            }
+            // .destination__text {
+            //     padding: 0 5rem 0 5rem;
+            // }
             hr {
                 margin: 4rem 4rem 1rem 4rem;
             }
             .destination__distance {
-                padding: 0 7rem 0 7rem;
+                // padding: 0 7rem 0 7rem;
+                display: flex;
+                flex-direction: row;
             }
         }
     }
@@ -174,7 +176,6 @@
         }
         &__containerRight {
             .destination__distance {
-                flex-direction: column;
                 margin: 0;
                 padding: 0;
             }
@@ -276,6 +277,9 @@
             width: 90%;
             .destination__title2 {
                 font-size: 5rem;
+            }
+            .destination__distance {
+                flex-direction: column;
             }
         }
     }
