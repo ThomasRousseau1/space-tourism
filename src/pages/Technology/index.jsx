@@ -29,7 +29,9 @@ function Technology() {
                 </div>
             </div>
             </div>
+            <div className='technology__img'>
                 <img src={images.portrait} alt={name} title={name} className='technology__image'/>
+            </div>
         </section>
         </>
     )
