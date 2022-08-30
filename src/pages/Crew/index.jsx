@@ -17,13 +17,21 @@ function Crew() {
                     <p className='crew__role'>{role}</p>
                     <h2 className='crew__name'>{name}</h2>
                     <p className='crew__bio'>{bio}</p>
-                {member.map((item, index) => (
-                        <button key={index} onClick={() => setValue(index)} className={`crew__button ${index === value && 'active-crew'}`}>
-                        </button>
-                    ))}
+                    <div className='crew__buttons'>
+                        {member.map((item, index) => (
+                            <button key={index} onClick={() => setValue(index)} className={`crew__button ${index === value && 'active-crew'}`}>
+                            </button>
+                        ))}
+                    </div>
             </div>
             <div className='crew__image'>
                 <img src={images.png} alt={name} title={name} />
+                <div className='crew__buttons--mobile'>
+                        {member.map((item, index) => (
+                            <button key={index} onClick={() => setValue(index)} className={`crew__button ${index === value && 'active-crew'}`}>
+                            </button>
+                        ))}
+                    </div>
             </div>
         </section>
         </>

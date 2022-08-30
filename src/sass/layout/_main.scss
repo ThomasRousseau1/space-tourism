@@ -92,7 +92,7 @@
     }
     &__containerRight {
         margin-top: 15rem;
-        width: 25rem;
+        width: 27rem;
 
         .destination__title2 {
             @include heading2;
@@ -135,7 +135,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15rem 15rem 0 15rem;
+    padding: 15rem 15rem 5rem 15rem;
     //background img 
     background-image: url(../../../public/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@
         line-height: 2rem;
         margin-bottom: 8rem;
         color: $colourSecondary;
-        width: 60%;
+        padding-right: 10rem;
     }
     &__button {
         padding: 0.5rem;
@@ -254,9 +254,16 @@
             border: 1px solid #fff;
         }
     }
-    &__image {
-        height: 40rem;
-        margin-top: 5rem;
+    &__img {
+        width: 40%;
+        position: relative;
+        .technology__image {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            margin-top: 5rem;
+        }
     }
 }
 .active-destination {
