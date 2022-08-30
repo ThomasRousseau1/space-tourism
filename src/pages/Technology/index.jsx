@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
 import data from "../../data/data.json"
 
 const technology = data.technology
@@ -8,6 +9,13 @@ function Technology() {
     const [value, setValue] = useState(0)
 
     const {name, images, description} = vehicule[value]
+
+    const fadeInTechnology = useRef()
+
+    useEffect(() => {
+        gsap.from(fadeInTechnology.current, { opacity: "0", duration: 1 })
+        gsap.to(fadeInTechnology.current, { opacity: "1", duration: 1 })
+    })
 
     return (
         <>
@@ -30,7 +38,7 @@ function Technology() {
             </div>
             </div>
             <div className='technology__img'>
-                <img src={images.portrait} alt={name} title={name} className='technology__image'/>
+                <img src={images.portrait} alt={name} title={name} className='technology__image' ref={fadeInTechnology} />
             </div>
         </section>
         </>
