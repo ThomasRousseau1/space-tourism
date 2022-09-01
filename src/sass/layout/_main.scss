@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 15rem;
-    height: 50rem;
+    min-height: 900px;
     //for background img
     background-image: url(../../../public/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50rem;
+    min-height: 900px;
     &__button {
         border-style: none;
         background-color: transparent;
@@ -141,6 +141,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 900px;
     &__title {
         @include heading5;
         font-weight: 100;
@@ -203,7 +204,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 45rem;
+    min-height: 900px;
     &__title {
         @include heading5;
         font-weight: 100;
