@@ -27,6 +27,10 @@
     .header__link {
         margin: 0;
     }
+    .line {
+        display: none;
+        visibility: hidden;
+    }
     .home {
         &__description {
             padding-left: 2rem;
@@ -125,7 +129,7 @@
         &__links {
             background:rgba(0, 0, 0, 0.5);
             justify-content: space-evenly;
-            width: 60%;
+            width: 65%;
         }
         &__link {
             margin: 0;
@@ -168,6 +172,7 @@
         background-position: center;
         min-height: 100%;
         &__containerLeft {
+            margin-top: 3rem;
             .destination__image {
                 width: 60%;
             }
@@ -233,7 +238,7 @@
             margin-bottom: 0;
             position: absolute;
             top: 0;
-            margin: 10rem 0 0 2rem ;
+            margin: 9rem 0 0 2rem ;
             font-size: 1.3rem;
         }
         &__container {
@@ -338,10 +343,11 @@
         }
         &__title {
             margin-left: 0;
-            margin-top: 7rem;
+            margin-top: 8rem;
             text-align: center;
             right: 0;
             left: 0;
+            font-size: 1rem;
         }
         .technology__img {
             .technology__image {
@@ -358,5 +364,11 @@
             visibility: hidden;
             display: none;
         }
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .technology {
+        padding: 9rem 0 5rem 0;
     }
 }

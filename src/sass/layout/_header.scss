@@ -13,6 +13,7 @@
         padding-left: 5rem;
     }
     &__links {
+        position: relative;
         display: flex;
         justify-content: space-between;
         // backdrop-filter: contrast(30%);
@@ -38,6 +39,24 @@
 
 .active-nav {
     color: blue;
+}
+
+.line {
+    position: absolute;
+    // right: 0;
+    top: 0;
+    margin-left: 13vw;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 30%;
+    // margin-right: 20vw;
+//     top: 6.6rem;
+    border: none;
+//     margin-top: -10px;
+//     // margin-top: -10px;
+    height: 1px;
+    background-color: gray;
+//     width: 50%;
 }
 
 //BURGER MENU

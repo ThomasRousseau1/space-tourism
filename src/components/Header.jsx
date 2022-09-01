@@ -30,9 +30,9 @@ function Header() {
                         </button>
                 <div className={`burger__nav ${navbarOpen ? "burger__show" : ""}`}>
                     <Link to="/" className='burger__link' onClick={() => closeMenu()}><p>00</p>Home</Link>
-                    <Link to="/destination" className='burger__link'><p>01</p>Destination</Link>
-                    <Link to="/crew" className='burger__link'><p>02</p>Crew</Link>
-                    <Link to="/technology" className='burger__link'><p>03</p>Technology</Link>
+                    <Link to="/destination" className='burger__link' onClick={() => closeMenu()}><p>01</p>Destination</Link>
+                    <Link to="/crew" className='burger__link' onClick={() => closeMenu()}><p>02</p>Crew</Link>
+                    <Link to="/technology" className='burger__link' onClick={() => closeMenu()}><p>03</p>Technology</Link>
                 </div>
             </div>
             <div className='header__links'>
@@ -41,6 +41,7 @@ function Header() {
                 <NavLink to="/crew" className='header__link'><span>02</span>Crew</NavLink>
                 <NavLink to="/technology" className='header__link'><span>03</span>Technology</NavLink>
             </div>
+            <hr className='line'/>
         </header>
         </>
     )
